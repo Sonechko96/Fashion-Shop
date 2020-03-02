@@ -36,7 +36,7 @@ blockquote:after,
 q:before,
 q:after {content:''; content: none;}
 
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;  outline: none;}
 
 del {text-decoration: line-through;}
 
@@ -87,7 +87,9 @@ label,
 input[type=button],
 input[type=submit],
 input[type=file],
-button {cursor: pointer;}
+button,
+button:active,
+button:focus {cursor: pointer;  outline: none;}
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea {margin: 0;}

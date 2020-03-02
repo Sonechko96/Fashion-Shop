@@ -30,4 +30,63 @@ $(document).ready(function(){
 
     });
 
+
+
+    $('.product-feat__carousel').slick({
+        autoplay: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
+                }
+            }
+        ]
+
+    });
+
+
+    $('.blogs__carousel').slick({
+        autoplay: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 2,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                }
+            }
+        ]
+
+    });
+
+
+
+
+
+
 });
